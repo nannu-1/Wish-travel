@@ -1,9 +1,9 @@
 from state import PlannerState
 
-# 4. Build Graph
+# Build Graph
 graph = StateGraph(PlannerState)
 
-# add nodes
+# Add nodes
 graph.add_node("Memory", RunnableLambda(memory_agent))
 graph.add_node("LocalExpert", RunnableLambda(local_expert_agent))
 graph.add_node("ExperienceCurator", RunnableLambda(experience_curator_agent))
@@ -12,7 +12,7 @@ graph.add_node("Logistics", RunnableLambda(logistics_agent))
 graph.add_node("Budget", RunnableLambda(budget_agent))
 graph.add_node("Event", RunnableLambda(event_agent))
 
-#define edges
+# Define edges
 graph.set_entry_point("Memory")
 graph.add_edge("Memory", "LocalExpert")
 graph.add_edge("LocalExpert", "ExperienceCurator")
