@@ -2,7 +2,7 @@ from langchain_groq import ChatGroq
 from state import PlannerState
 
 
-# 2. Load LLM
+# Load LLM
 llm=ChatGroq(
     temperature=0,
     groq_api_key="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",
@@ -10,7 +10,7 @@ llm=ChatGroq(
 )
 
 
-# 3. Define Agents
+# Define Agents
 def memory_agent(state: PlannerState) -> PlannerState:
     return state  # Extend with ChromaDB lookup
 
