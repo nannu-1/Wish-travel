@@ -1,4 +1,4 @@
-# 1. Define State
+# Define State
 from typing import TypedDict, Annotated, List
 from langchain_core.messages import HumanMessage, AIMessage
 
