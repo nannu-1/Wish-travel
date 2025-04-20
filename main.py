@@ -1,6 +1,6 @@
 import PlannerState from state
 
-# 5. User Input
+# User Input
 print("Welcome to Wish Travel: Your AI Travel Planner")
 city = input("Enter your destination city:")
 country = input("Enter the country:")
@@ -19,10 +19,10 @@ example_input: PlannerState = {
 }
 
 
-# 6. Run
+# Run
 result = app.invoke(example_input)
 
-# 7. Print Output
+# Print Output
 print("\n Final Itinerary\n")
 print(result['itinerary'])
 
