@@ -5,7 +5,7 @@ from state import PlannerState
 # Load LLM
 llm=ChatGroq(
     temperature=0,
-    groq_api_key="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",
+    groq_api_key="Your API key",
     model_name="llama-3.3-70b-versatile"
 )
 
