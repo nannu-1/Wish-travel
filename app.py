@@ -20,7 +20,7 @@ def save_itinerary_file(city, country, itinerary, file_format):
 
     elif file_format == "DOCX":
         doc = Document()
-        doc.add_heading("WanderMind Itinerary", 0)
+        doc.add_heading("Wish Travel Itinerary", 0)
         doc.add_paragraph(itinerary)
         docx_file = f"{filename_base}_itinerary.docx"
         doc.save(docx_file)
