@@ -78,8 +78,8 @@ ui = gr.Interface(
         gr.Textbox(label="Generated Itinerary"),
         gr.File(label="Download File"),
     ],
-    title="🌍 WanderMind: AI Travel Planner",
-    description="Enter a future travel date in DD-MM-YYYY format. WanderMind will create a custom itinerary for you.",
+    title="🌍 Wish Travel: AI Travel Planner",
+    description="Enter a future travel date in DD-MM-YYYY format. Wish Travel will create a custom itinerary for you.",
 )
 
 ui.launch(share=True)
